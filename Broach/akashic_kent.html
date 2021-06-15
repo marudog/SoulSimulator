@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<title>브로치 시뮬레이터</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<meta charset="UTF-8" name="viewport"
+    content="width=device-width, initial-scale=0.6, user-scalable=no, maximum-scale=1.0, minimum-scale=0.7">
+<style>
+    body {
+        font-family: 'Noto Sans KR';
+
+        background-image: url('img/normal_img/background.png');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+</head>
+
+<body>
+    <div id="jb-container">
+        <div id="jb-top">
+            <h1 align="center">브로치 시뮬레이터</h1>
+            <div class="divTable">
+                <div class="divTableBody">
+                    <div class="divTableRow">
+                        <div class="divTableCell"> <img onclick="showImage(1)" src="img/roll_1.png">
+                        </div>
+                        <div class="divTableCell"> <img onclick="showImage(11)" src="img/roll_10.png">
+                        </div>
+                    </div>
+                    <div class="divTableRow">
+                        <div class="divTableCell">1</div>
+                        <div class="divTableCell">5</div>
+                        <div class="divTableCell">10</div>
+                        <div class="divTableCell">30</div>
+                        <div class="divTableCell">50</div>
+                        <div class="divTableCell">100</div>
+                    </div>
+                </div>
+            </div>
+            <span id="luck"></span>
+        </div>
+        <div id="jb-content">
+            <h2>결과</h2>
+            <p id="resultImg"></p>
+        </div>
+        <div id="jb-content">
+            <h2>합산</h2>
+            5성 : <span id="item_3">0</span> (<span id="item_3_per">0</span>%)<br>
+            4성 : <span id="item_4">0</span> (<span id="item_4_per">0</span>% )｜
+            3성 : <span id="item_5">0</span> (<span id="item_5_per">0</span>% )｜
+            2성 : <span id="item_6">0</span> (<span id="item_6_per">0</span>%)<br>
+            합계 : <span id="count">0</span><br><br>
+            서버비 : <span id="money">0</span>원 &nbsp;｜
+            포인트 : <span id="point">0</span> &nbsp;｜
+            천장 : <span id="full">0</span>번<br>
+        </div>
+        <div id="jb-content">
+            <h2>나온 5성 목록</h2>
+            <span id="star5"></span><br>
+        </div>
+        <div id="jb-bottom">
+            <h2>확률은 공식 홈페이지 고객센터</h2><br>
+        </div>
+    </div>
+</body>
+<script src="js/akashic_pickup.js"></script>
+
+</html>
